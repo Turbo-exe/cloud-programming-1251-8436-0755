@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Programming Demo Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+    <div class="logo">Cloud Programming Demo Website</div>
+    <div class="nav-links">
+        <a href="#regions">Regions</a>
+        <a href="#services">Mock-Backend services</a>
+    </div>
+    <div class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
+<header id="regions">
+    <h1>Region selector</h1>
+    <p>This website is designed to be highly available and reachable with lowest latency around the world.</p>
+    <p>Using the links below, you can access a specific regional website deployment. You are routed to the most optimal
+        website by default.</p>
+    <div class="region-selector">
+        <a href="/eu/home" class="region-button">Go to regional website @ Europe</a><br>
+        <a href="/us/home" class="region-button">Go to regional website @ United States</a><br>
+        <a href="/ap/home" class="region-button">Go to regional website @ Asia Pacific</a><br>
+        <a href="/af/home" class="region-button">Go to regional website @ Africa</a>
+    </div>
+</header>
+
+
+<section id="services">
+    <h2>Mock-Backend services</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <h3>Service 1</h3>
+            <p>Use this button to imitate backend communication. Click the button to imitate the sending of a customer
+                request to our company.</p>
+            <button class="service-button">Backend call #1</button>
+        </div>
+        <div class="service-card">
+            <h3>Service 2</h3>
+            <p>This button also triggers backend communication, but to another API. This call imitates to fetch customer
+                requests already made.</p>
+            <button class="service-button">Backend call #2</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Copyright</h3>
+            <p>Created for Cloud Programming Course</p>
+            <p>by Felix Asenbauer (IU14110600)</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
