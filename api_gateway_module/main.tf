@@ -1,7 +1,7 @@
 resource aws_apigatewayv2_api lambda_api_gateway {
   name                         = local.gateway_name
   protocol_type                = "HTTP"
-  disable_execute_api_endpoint = false
+  disable_execute_api_endpoint = true   # the API is not required as an origin in Cloudfront, therefore we deactivate it
 }
 
 resource aws_cloudwatch_log_group lambda_gateway_log_group {
