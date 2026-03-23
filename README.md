@@ -2,6 +2,17 @@
 
 This repository contains a comprehensive Terraform Infrastructure as Code (IaC) project that deploys a multi-region serverless web application on AWS. The infrastructure includes static website hosting, serverless API endpoints, global content delivery, and DNS management.
 
+
+---
+
+Disclaimer #1: This infrastructure was created by Felix Asenbauer for Portfolio Project DLBSEPCP01_D.
+
+Disclaimer #2: For the content within `src` (the demo website) "artificial intelligence" (Jetbrains AI Assistant) was used to create the styling and layout of the pages.
+
+Disclaimer #3: Due to the cost associated with a AWS WAF instance, the configuration has been omitted for this repository - also because there is no free credit for this service. This is a known deviation from the documentation ("Finales Produkt"), which is accepted in order to avoid unnecessary costs (for potential multiple months of running this service with AWS WAF, during the evaluation period).
+
+---
+
 ## Architecture Overview
 
 The infrastructure deploys the following components across multiple AWS regions:
@@ -498,10 +509,3 @@ done
 Note #1: Due to CloudFronts Caching mechanism, you will receive different values on multiple reruns, which are caused by potentially required origin-fetches (slower) and cache retrievals (faster).
 
 Note #2: To avoid uncertainties in the measurement, use should never run this measurement locally. Rather use the AWS Management Consoles shell.
-
-
----
-
-Disclaimer #1: This infrastructure was created by Felix Asenbauer for Portfolio Project DLBSEPCP01_D.
-
-Disclaimer #2: For the content within `src` (the demo website) "artificial intelligence" (Jetbrains AI Assistant) was used to create the styling and layout of the pages.
